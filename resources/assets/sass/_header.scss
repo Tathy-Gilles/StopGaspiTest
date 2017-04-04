@@ -1,0 +1,67 @@
+header {
+  background-color: $white;
+  // padding-bottom: 40px;
+  .green_band {
+    height: 5px;
+    background-color: $darkGreen;
+    margin-bottom: 30px;
+  }
+  .container {
+    width: 1024px;
+    .logo {
+      height: 80px;
+      margin-bottom: 40px;
+    }
+    .menu {
+      text-transform: uppercase;
+      .item {
+        display: inline-block;
+        margin-left: 20px;
+        &.first {
+          margin-left: 0px;
+        }
+      }
+    }
+    .form {
+      margin: 0 auto;
+      .title {
+        text-transform: uppercase;
+      }
+      input {
+        width: 130px;
+      }
+      button {
+        width: 130px;
+        border: none;
+        text-transform: uppercase;
+        background-color: $green;
+        color: $white;
+      }
+      .flex {
+        display: flex;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    .container {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    .container {
+      .logo {
+        display: block;
+        margin: 0 auto;
+      }
+      .form {
+        display: none;
+      }
+    }
+  }
+}

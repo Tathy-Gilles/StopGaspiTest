@@ -1,0 +1,16 @@
+footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: $white;
+  .container {
+    width: 1024px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  footer {
+    .container {
+      width: 100%;
+    }
+  }
+}
