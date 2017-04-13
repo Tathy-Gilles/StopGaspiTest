@@ -3,7 +3,7 @@
 @section('content')
   <div class="container" >
     <div class="row">
-      <div class="frame col-md-12 page-conseil">
+      <div class="frame col-md-12 page-conseil well">
         <div class="col-md-12 title"><h1>Les conseils stopgaspi</h1></div>
         <div class="col-md-12 content">
           <div class="col-md-4 item">

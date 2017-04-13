@@ -8,7 +8,7 @@ Route::get('/', function () {
 Route::get('conseils', 'PageController@conseils');
 
 Route::get('simulateur', 'SimulateurController@index');
-
+Route::get('calcul', 'CalculController@index');
 
 Route::get('videos', 'VideoController@display_all');
 Route::get('videos/{id}', 'VideoController@display');
@@ -16,6 +16,7 @@ Route::get('videos/{id}', 'VideoController@display');
 
 Route::get('/contact', 'ContactController@index');
 Route::post('/contact', 'ContactController@submit');
+
 
 // Auth
 
