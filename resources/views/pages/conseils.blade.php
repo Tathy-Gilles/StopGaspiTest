@@ -16,7 +16,7 @@
             <div><img src="images/icons/fiche.png" /></div>
             <h2>Fiches Conseils</h2>
             <p class="text-left">Left aligned text.Left aligned text.Left aligned text.Left aligned text.Left aligned text.Left aligned text.</p>
-            <button>voir les fiches</button>
+            <a href='/fiche'><button>voir les fiches</button></a>
           </div>
           <div class="col-md-4 item">
             <div><img src="images/icons/rss.png" /></div>

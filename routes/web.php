@@ -7,6 +7,13 @@ Route::get('/', function () {
 
 Route::get('conseils', 'PageController@conseils');
 
+
+Route::get('fiche', 'FicheController@display_all');
+
+
+Route::get('energie-thermique', 'FicheController@display_energie_thermique');
+
+
 Route::get('simulateur', 'SimulateurController@index');
 Route::get('calcul', 'CalculController@index');
 

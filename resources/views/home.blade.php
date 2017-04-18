@@ -28,7 +28,7 @@ Inscrivez-vous, testez votre éligibilité au Bonus Eco Energie et créez vos do
         <h1 class="text-center">Calculez votre exoneration</h1>
         <div><img src="images/icons/simulator.png" class="icons" /></div>
         <p class="text-left">Vous ne savez pas à combien de réduction fiscal vous avez le droit. Venez tester notre calculatrice d'exonération fiscal</p>
-        <button class="btn btn-default" type="submit">Calculer</button>
+        <button class="btn btn-default"><a href="/calcul" style="text-decoration:none ;">Calculer</a></button>
       </div>
    </div>
    <div class='flex row'>
