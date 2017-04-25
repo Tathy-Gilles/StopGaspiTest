@@ -8332,11 +8332,13 @@ footer .container {
 @media screen and (max-width: 1024px) {
   footer .container {
     width: 100%;
+    background-color: #ffffff;
   }
 }
 
 header {
   background-color: #ffffff;
+  background-image:url(http://www.cssauthor.com/wp-content/uploads/2013/07/Blurred-Background_2.jpg);
 }
 
 header .green_band {
@@ -8346,7 +8348,7 @@ header .green_band {
 }
 
 header .container {
-  width: 1024px;
+  width: 100%;
 }
 
 header .container .logo {

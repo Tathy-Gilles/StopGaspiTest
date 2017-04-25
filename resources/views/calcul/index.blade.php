@@ -1,9 +1,49 @@
 @extends('layouts.master')
 
 @section('content')
+ 
 <div class="container">
-  <div class="col-lg-12 well">
-  <div class="row">
+    <div class="row">
+        <div class="col-md-4" >
+            <ul class="list-group nav" role="tablist">
+                <li class="list-group-item">
+                    <br>
+                    <div class="text-center"><i class="fa fa-calculator fa-5x" aria-hidden="true"></i><br>
+                    <br>UNE PRIME ECO<br> ENERGIE EN EUROS
+                  </div>
+                    
+                </li>
+
+                  <li class="list-group-item">
+                   
+                    <div class="text-center"><i class="fa fa-clock-o fa-5x" aria-hidden="true"></i><br>
+                    <br>UN PAIEMENT SOUS <br>4 SEMAINES
+                  </div>
+                    
+                </li>
+
+                  <li class="list-group-item">
+                  
+                    <div class="text-center"><i class="fa fa-child fa-5x" aria-hidden="true"></i><br>
+                    <br>DES CONSEILLERS <br>À VOTRE DISPOSITON
+                  </div>
+                    
+                </li>
+
+                  <li class="list-group-item">
+                 
+                    <div class="text-center"><i class="fa fa-check-circle-o fa-5x" aria-hidden="true"></i><br>
+                    <br>UN MONTANT<br> ATTRACTIF<br>
+                  </div>
+                    
+                </li>
+
+                  
+                
+            </ul>
+        </div>
+        <div class="col-md-8 tab-content">
+            <div class="row">
         <form>
           <div class="col-sm-12">
             <div class="row">
@@ -56,9 +96,10 @@
           </div>
         </form> 
         </div>
-  </div>
-  </div>
-
-
+    
+           </div>
+        </div>
+    </div>
+</div>
 
 @endsection

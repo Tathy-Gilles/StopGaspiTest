@@ -1,17 +1,7 @@
-.red {
- background: gray;
-}
+body { margin-top:30px; }
+#login-nav input { margin-bottom: 15px; }
 
-.gray {
- background: gray;
-}
 
-.myfont{
-font-family: Arial,Helvetica,sans-serif;
-}
-
-#bg-primary{
-
+body {
 	background: white;
-
 }

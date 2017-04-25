@@ -4,12 +4,13 @@
  
 <div class="container">
 
-    <h1 class="well">Contactez-nous</h1>
+   
     <div class="row">
         <div class="col-md-8">
-            <div class="well well-sm">
+            <div class="frame well well-sm">
                 <form>
                 <div class="row">
+                    <br>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="name">

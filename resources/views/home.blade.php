@@ -1,12 +1,14 @@
 @extends('layouts.master')
 
 @section('content')
+
+
   <div class="container" >
     <div class='flex row'>
       <div class="col-md-12">
         <div class='frame margin-fix row'>
           <div class="flex col-xs-12 col-sm-12 col-md-12">
-            <div><img src="images/map.png" class="map" /></div>
+            <div><img src="images/map.png" class="map"/></div>
             <div class='flex column'>
               <h1>Qui sommes-nous</h1>
               <p class="text-left">
