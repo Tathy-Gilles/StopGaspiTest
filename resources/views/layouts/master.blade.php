@@ -17,13 +17,13 @@
     <div class="green_band" ></div>
     <div class="container" >
       <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-6" >
+        <div class="col-sm-12 col-md-6 col-lg-6 text-center" >
           <img src='images/logo.png' class='logo'/>
         </div>
 
 
 
- <div class="col-sm-12 col-md-6 col-lg-6" >
+ <div class="col-sm-12 col-md-6 col-lg-6 text-center" >
         <div class="row text-center">
           <i class="fa fa-facebook-square fa-5x" aria-hidden="true" style="color:#777"></i>
           <i class="fa fa-twitter-square fa-5x" aria-hidden="true" style="color:#777"></i>

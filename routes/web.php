@@ -5,17 +5,49 @@ Route::get('/', function () {
 })->name('home');
 
 
+
+// Ajouté par Gilles
+
 Route::get('conseils', 'PageController@conseils');
-
-
 Route::get('fiche', 'FicheController@display_all');
-
-
 Route::get('energie-thermique', 'FicheController@display_energie_thermique');
-
-
 Route::get('simulateur', 'SimulateurController@index');
 Route::get('calcul', 'CalculController@index');
+
+//
+
+
+//RSS
+Route::get('rss', 'RssController@index');
+Route::get('/rss-feed', function () {
+
+   /* create new feed */
+   $feed = App::make("feed");
+
+   /* creating rss feed with our most recent 20 posts */
+   $posts = \DB::table('posts')->orderBy('created_at', 'desc')->take(20)->get();
+
+   /* set your feed's title, description, link, pubdate and language */
+   $feed->title = 'Your title';
+   $feed->description = 'Your description';
+   $feed->logo = 'http://yoursite.tld/logo.jpg';
+   $feed->link = url('feed');
+   $feed->setDateFormat('datetime');
+   $feed->pubdate = $posts[0]->created_at;
+   $feed->lang = 'en';
+   $feed->setShortening(true);
+   $feed->setTextLimit(100);
+
+   foreach ($posts as $post)
+   {
+       $feed->add($post->title, $post->author, URL::to($post->slug), $post->created_at, $post->description, $post->content);
+   }
+
+   return $feed->render('atom');
+
+});
+
+//
 
 Route::get('videos', 'VideoController@display_all');
 Route::get('videos/{id}', 'VideoController@display');

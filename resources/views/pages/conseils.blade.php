@@ -22,7 +22,7 @@
             <div><img src="images/icons/rss.png" /></div>
             <h2>Flux RSS</h2>
             <p class="text-left">Left aligned text.Left aligned text.Left aligned text.Left aligned text.Left aligned text.Left aligned text.</p>
-            <button>s'abonner au flux</button>
+             <a href='/rss'><button>s'abonner au flux</button></a>
           </div>
         </div>
       </div>
