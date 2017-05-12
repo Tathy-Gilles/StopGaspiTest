@@ -62,6 +62,8 @@ Route::post('/contact', 'ContactController@submit');
 Route::get('/register', 'RegistrationController@create');
 Route::post('/register', 'RegistrationController@store');
 
+Route::get('/update', 'RegistrationController@update');
+
 Route::get('/login', 'SessionsController@create');
 Route::post('/login', 'SessionsController@store');
 

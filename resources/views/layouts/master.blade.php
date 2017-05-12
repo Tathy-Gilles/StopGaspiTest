@@ -54,27 +54,36 @@
                   <li><a class="navbar-brand" href="/simulateur">Simulateur</a></li>
                   <li><a class="navbar-brand" href="/contact">Contact</a></li>                 
                </ul>
-
+               
 
              
 
-
-
-               <ul class="nav navbar-nav navbar-right">
+               @if(Auth::check())
+                 <ul class="nav navbar-nav navbar-right">
+      
+            <li class="dropdown">
+            <a href="#" class="navbar-brand" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i> {{ Auth::user()->firstname}}</a>
+            <ul class="dropdown-menu">
+              <li><a href="/profil">Mon profil</a></li>
+              <li><a href="/logout">Se déconnecter</a></li>
+               </ul>
+               @else
+                  <ul class="nav navbar-nav navbar-right">
                   <li class="dropdown">
                      <a href="http://www.jquery2dotnet.com" class="dropdown-toggle navbar-brand" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i> Se connecter<b class="caret"></b></a>
                      <ul class="dropdown-menu" style="padding: 15px;min-width: 250px;">
                         <li>
                            <div class="row">
                               <div class="col-md-12">
-                                 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                 <form class="form" method='POST' action='/login' id="login-nav"> 
+                                {{ csrf_field() }}
                                     <div class="form-group">
-                                       <label class="sr-only" for="exampleInputEmail2">Pseudo</label>
-                                       <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Nom d'utilisateur" required>
+                                       <label class="sr-only" for="exampleInputEmail2">email</label>
+                                       <input type="text" name='email' class="form-control" id="exampleInputEmail2" placeholder="Nom d'utilisateur">
                                     </div>
                                     <div class="form-group">
                                        <label class="sr-only" for="exampleInputPassword2">Password</label>
-                                       <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Mots de passe" required>
+                                       <input type="password" name='password' class="form-control" id="exampleInputPassword2" placeholder="Mots de passe">
                                     </div>
                                    
                                     <div class="form-group">
@@ -92,6 +101,10 @@
                      </ul>
                   </li>
                </ul>
+               @endif
+
+
+               
             </div>
             <!-- /.navbar-collapse -->
          </nav>

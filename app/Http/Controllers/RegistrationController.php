@@ -26,7 +26,31 @@ class RegistrationController extends Controller
 
       \Mail::to($user)->send(new UserRegistration($user));
 
-      return redirect()->home();
+
+
+      return redirect('login')->with('success', 'Vous êtes bien enregister');
+
+    }
+
+
+    public function update() {
+
+      $this->validate(request(), [
+        'siret' => 'required',
+        'company' => 'required',
+        'lastname' => 'required',
+        'firstname' => 'required',
+        'email' => 'required|email',
+        'password' => 'required|confirmed'
+      ]);
+
+      $user = User::create(request(['siret', 'company', 'lastname', 'firstname', 'email', 'password']));
+
+      \Mail::to($user)->send(new UserRegistration($user));
+
+
+
+      return redirect('login')->with('success', 'Vous êtes bien enregister');
 
     }
 }
